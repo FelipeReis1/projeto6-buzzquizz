@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #EC362D;
+    height: 69px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 0;
+}
+
+.titulo {
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.criarQuizz {
+    width: 1051px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #D4D4D4;
+    margin: auto;
+    margin-top: 126px;
+}
+
+.nenhumQuizz {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #B9B9B9;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+button {
+    border-radius: 50px;
+    margin-top: 34px;
+    background-color: transparent;
+    border: 1px dashed #EC362D;
+    color: #EC362D;
+}
+
+.conteudo {
+    width: 1051px;
+    margin: 0 auto;
+    margin-top: 57px;
+}
+
+.todosOsQuizzes{
+    width: 1051px;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.caixaQuizz{
+    position: relative;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+
+.imgQuizz {
+    width: 340px;
+    height: 181px;
+    border-radius: 5px;
+}
+
+.nomeQuizz{
+    position: absolute;
+    bottom: 2px;
+    width: 96%;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 63.54%, #000000 100%);
+    border-radius: 5px;
+}
