@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fonte-->
+    <script
+      src="https://kit.fontawesome.com/20a4156818.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BuzzQuizz</title>
   </head>
-  <body></body>
+  <body>
+    <!--Tela 3.1-->
+    <!--<div class="barraSuperior"><h1 class="titulo">BuzzQuizz</h1></div>
+    <div class="containerPrincipal">
+      <h2 class="subtitulo">Comece pelo começo</h2>
+      <div class="containerFormulario">
+        <input type="text" placeholder="Título do seu quizz" />
+        <input type="text" placeholder="URL da imagem do seu quizz" />
+        <input type="text" placeholder="Quantidade de perguntas do quizz" />
+        <input type="text" placeholder="Quantidade de níveis do quizz" />
+      </div>
+      <button>
+        <p class="paragrafoBotao">Prosseguir para criar perguntas</p>
+      </button>
+    </div>-->
+    <!--Tela 3.1-->
+
+    <!--Tela 3.2-->
+    <div class="barraSuperior"><h1 class="titulo">BuzzQuizz</h1></div>
+    <div class="containerPrincipal">
+      <h2 class="subtitulo">Crie suas perguntas</h2>
+      <div class="containerFormulario">
+        <h3 class="subtituloFormulario">Pergunta 1</h3>
+        <input type="text" placeholder="Texto da pergunta" />
+        <input type="text" placeholder="Cor de fundo da pergunta" />
+        <h3 class="subtituloFormulario">Resposta Correta</h3>
+        <input type="text" placeholder="Resposta correta" />
+        <input type="text" placeholder="URL da imagem" />
+        <h3 class="subtituloFormulario">Respostas Incorretas</h3>
+        <div class="caixaDupla">
+          <input type="text" placeholder="Resposta incorreta 1" />
+          <input type="text" placeholder="URL da imagem 1" />
+        </div>
+        <div class="caixaDupla">
+          <input type="text" placeholder="Resposta incorreta 2" />
+          <input type="text" placeholder="URL da imagem 2" />
+        </div>
+        <div class="caixaDupla">
+          <input type="text" placeholder="Resposta incorreta 3" />
+          <input type="text" placeholder="URL da imagem 3" />
+        </div>
+      </div>
+      <div class="barraPerguntas">
+        <h3 class="subtituloFormulario">Pergunta 2</h3>
+        <i class="fa-regular fa-pen-to-square"></i>
+      </div>
+      <div class="barraPerguntas">
+        <h3 class="subtituloFormulario">Pergunta 3</h3>
+        <i class="fa-regular fa-pen-to-square"></i>
+      </div>
+      <button>
+        <p class="paragrafoBotao">Prosseguir para criar níveis</p>
+      </button>
+    </div>
+    <!--Tela 3.2-->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
