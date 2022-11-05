@@ -21,45 +21,61 @@
     <title>BuzzQuizz</title>
   </head>
   <body>
-    <!--Tela 3.1-->
     <div class="barraSuperior"><h1 class="titulo">BuzzQuizz</h1></div>
-    <div class="containerPrincipal">
+    <!--Tela Desktop 8-->
+    <div class="containerPrincipal escondido">
       <h2 class="subtitulo">Comece pelo começo</h2>
       <div class="containerFormulario">
-        <input type="text" placeholder="Título do seu quizz" />
-        <input type="text" placeholder="URL da imagem do seu quizz" />
-        <input type="text" placeholder="Quantidade de perguntas do quizz" />
-        <input type="text" placeholder="Quantidade de níveis do quizz" />
+        <input
+          type="text"
+          minlength="20"
+          maxlength="65"
+          placeholder="Título do seu quizz"
+        />
+        <input type="url" placeholder="URL da imagem do seu quizz" />
+        <input
+          type="number"
+          min="3"
+          placeholder="Quantidade de perguntas do quizz"
+        />
+        <input
+          type="number"
+          min="2"
+          placeholder="Quantidade de níveis do quizz"
+        />
       </div>
       <button>
         <p class="paragrafoBotao">Prosseguir para criar perguntas</p>
       </button>
     </div>
-    <!--Tela 3.1-->
+    <!--Tela Desktop 8-->
 
-    <!--Tela 3.2-->
-    <!--<div class="barraSuperior"><h1 class="titulo">BuzzQuizz</h1></div>
-    <div class="containerPrincipal">
+    <!--Tela Desktop 9-->
+    <div class="containerPrincipal escondido">
       <h2 class="subtitulo">Crie suas perguntas</h2>
       <div class="containerFormulario">
         <h3 class="subtituloFormulario">Pergunta 1</h3>
-        <input type="text" placeholder="Texto da pergunta" />
-        <input type="text" placeholder="Cor de fundo da pergunta" />
+        <input type="text" minlength="20" placeholder="Texto da pergunta" />
+        <input
+          type="color"
+          placeholder="Cor de fundo da pergunta"
+          value="#ffffff"
+        />
         <h3 class="subtituloFormulario">Resposta Correta</h3>
-        <input type="text" placeholder="Resposta correta" />
-        <input type="text" placeholder="URL da imagem" />
+        <input type="text" required placeholder="Resposta correta" />
+        <input type="url" placeholder="URL da imagem" />
         <h3 class="subtituloFormulario">Respostas Incorretas</h3>
         <div class="caixaDupla">
           <input type="text" placeholder="Resposta incorreta 1" />
-          <input type="text" placeholder="URL da imagem 1" />
+          <input type="url" placeholder="URL da imagem 1" />
         </div>
         <div class="caixaDupla">
           <input type="text" placeholder="Resposta incorreta 2" />
-          <input type="text" placeholder="URL da imagem 2" />
+          <input type="url" placeholder="URL da imagem 2" />
         </div>
         <div class="caixaDupla">
           <input type="text" placeholder="Resposta incorreta 3" />
-          <input type="text" placeholder="URL da imagem 3" />
+          <input type="url" placeholder="URL da imagem 3" />
         </div>
       </div>
       <div class="barraPerguntas">
@@ -73,53 +89,188 @@
       <button>
         <p class="paragrafoBotao">Prosseguir para criar níveis</p>
       </button>
-    </div>-->
-    <!--Tela 3.2-->
+    </div>
+    <!--Tela Desktop 9-->
 
-    <!--HTML RAQUEL DAQUI PARA BAIXO-->
-
-    <!--Cabeçalho  com o titulo da pagina-->
-    <!--<div class="header">
-      <div class="titulo">BuzzQuizz</div>
-    </div>-->
-
-    <!--Div que quarda o titulo e o button que leva para a outra pagina-->
-    <!--<div class="criarQuizz">
-      <div class="nenhumQuizz"><h1>Você não criou nenhum</br>quizz ainda :(</h1>
-        <button onclick="criaOQuizz()">Criar Quizz</button>
+    <!--Tela Desktop 1-->
+    <div class="containerPrincipal escondido">
+      <div class="criarQuizz">
+        <div class="nenhumQuizz">
+          <h1>Você não criou nenhum<br />quizz ainda :(</h1>
+          <button class="botaoCriar" onclick="criarQuizz()">Criar Quizz</button>
+        </div>
+      </div>
+      <div class="conteudo">
+        <h1><strong>Todos os Quizzes</strong></h1>
+        <div class="todosOsQuizzes">
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://pbs.twimg.com/media/EG1xirEX4AAFsCF.jpg"
+              alt="Preguicinha"
+            />
+            <div class="nomeQuizz">O quanto você é de boas?</div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
+        </div>
+        <div class="todosOsQuizzes">
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://pbs.twimg.com/media/EG1xirEX4AAFsCF.jpg"
+              alt="Preguicinha"
+            />
+            <div class="nomeQuizz">O quanto você é de boas?</div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="conteudo">
-      <h1><strong>Todos os Quizzes</strong></h1>
-      <div class="todosOsQuizzes">
+    <!--Tela Desktop 1-->
+
+    <!--Tela Desktop 2-->
+    <div class="containerPrincipal">
+      <div class="divTitulo">
+        <h1><strong>Seus Quizzes</strong></h1>
+        <i class="fa-solid fa-circle-plus"></i>
+      </div>
+
+      <div class="meusQuizzes">
         <div class="caixaQuizz">
-          <img class="imgQuizz" src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg" alt="Os Simpsons">
-          <div class="nomeQuizz">Acerte os personagens corretos </br> dos Simpsons e  prove o seu amor!</div>
+          <img
+            class="imgQuizz"
+            src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+            alt="Os Simpsons"
+          />
+          <div class="nomeQuizz">
+            Acerte os personagens corretos <br />
+            dos Simpsons e prove o seu amor!
+          </div>
         </div>
         <div class="caixaQuizz">
-          <img class="imgQuizz" src="https://pbs.twimg.com/media/EG1xirEX4AAFsCF.jpg" alt="Preguicinha">
-          <div class="nomeQuizz">O quanto você é de boas?</div>
-        </div>
-        <div class="caixaQuizz">
-          <img class="imgQuizz" src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg" alt="Os Simpsons">
-          <div class="nomeQuizz">Acerte os personagens corretos </br> dos Simpsons e  prove o seu amor!</div>
+          <img
+            class="imgQuizz"
+            src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+            alt="Os Simpsons"
+          />
+          <div class="nomeQuizz">
+            Acerte os personagens corretos <br />
+            dos Simpsons e prove o seu amor!
+          </div>
         </div>
       </div>
-      <div class="todosOsQuizzes">
-        <div class="caixaQuizz">
-          <img class="imgQuizz" src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg" alt="Os Simpsons">
-          <div class="nomeQuizz">Acerte os personagens corretos </br> dos Simpsons e  prove o seu amor!</div>
+
+      <div class="conteudo">
+        <h1><strong>Todos os Quizzes</strong></h1>
+        <div class="todosOsQuizzes">
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://pbs.twimg.com/media/EG1xirEX4AAFsCF.jpg"
+              alt="Preguicinha"
+            />
+            <div class="nomeQuizz">O quanto você é de boas?</div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
         </div>
-        <div class="caixaQuizz">
-          <img class="imgQuizz" src="https://pbs.twimg.com/media/EG1xirEX4AAFsCF.jpg" alt="Preguicinha">
-          <div class="nomeQuizz">O quanto você é de boas?</div>
-        </div>
-        <div class="caixaQuizz">
-          <img class="imgQuizz" src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg" alt="Os Simpsons">
-          <div class="nomeQuizz">Acerte os personagens corretos </br> dos Simpsons e  prove o seu amor!</div>
+        <div class="todosOsQuizzes">
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://pbs.twimg.com/media/EG1xirEX4AAFsCF.jpg"
+              alt="Preguicinha"
+            />
+            <div class="nomeQuizz">O quanto você é de boas?</div>
+          </div>
+          <div class="caixaQuizz">
+            <img
+              class="imgQuizz"
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt="Os Simpsons"
+            />
+            <div class="nomeQuizz">
+              Acerte os personagens corretos <br />
+              dos Simpsons e prove o seu amor!
+            </div>
+          </div>
         </div>
       </div>
-    </div>-->
+    </div>
+    <!--Tela Desktop 2-->
 
     <script src="./js/script.js"></script>
   </body>
