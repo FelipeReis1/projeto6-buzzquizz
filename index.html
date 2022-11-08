@@ -171,7 +171,7 @@
     <!--Tela Desktop 1-->
 
     <!--Tela Desktop 2-->
-    <div class="containerPrincipal">
+    <div class="containerPrincipal escondido">
       <div class="divTitulo">
         <h1><strong>Seus Quizzes</strong></h1>
         <i class="fa-solid fa-circle-plus"></i>
@@ -346,46 +346,61 @@
     <!--Tela Desktop 3-->
 
     <!-- TELA CRIAÇÃO DE QUIZ - NIVEIS DO QUIZ -->
-    <div class="cria-nivel-area-geral escondido">
-      <p class="forte p1"><span style="font-size: 23px;">Agora, decida os níveis!</span></p> <!-- AJUSTAR O NOME DESSA CLASSE -->
+    <div class="cria-nivel-area-geral">
+      <p class="forte p1">
+        <span style="font-size: 23px">Agora, decida os níveis!</span>
+      </p>
+      <!-- AJUSTAR O NOME DESSA CLASSE -->
       <div class="caixa-nivel caixa-nivel-aberta" id="criaQuizNivel1">
-          <div class="icone-caixa-nivel escondido"  onclick="abrirCaixaNivel(this)">
-              <ion-icon name="create-outline"></ion-icon>
-          </div>
-          <p class="forte p1">Nível 1</p>
-          <div class="area-inputs-nivel area-inputs-nivel-visivel" id="nivel1">
-              <input placeholder="Título do nível" class="input-caixa-nivel"/>
-              <input placeholder="% de acerto mínima" class="input-caixa-nivel"/>
-              <input placeholder="URL da imagem do nível" class="input-caixa-nivel"/>
-              <input placeholder="Descrição do nível" class="input-caixa-nivel"/>
-          </div>
+        <div
+          class="icone-caixa-nivel escondido"
+          onclick="abrirCaixaNivel(this)"
+        >
+          <ion-icon name="create-outline"></ion-icon>
+        </div>
+        <p class="forte p1">Nível 1</p>
+        <div class="area-inputs-nivel area-inputs-nivel-visivel" id="nivel1">
+          <input placeholder="Título do nível" class="input-caixa-nivel" />
+          <input placeholder="% de acerto mínima" class="input-caixa-nivel" />
+          <input
+            placeholder="URL da imagem do nível"
+            class="input-caixa-nivel"
+          />
+          <input placeholder="Descrição do nível" class="input-caixa-nivel" />
+        </div>
       </div>
       <div class="caixa-nivel caixa-nivel-fechada" id="criaQuizNivel2">
-          <div class="icone-caixa-nivel"  onclick="abrirCaixaNivel(this)">
-              <ion-icon name="create-outline"></ion-icon>
-          </div>
-          <p class="forte p1">Nível 2</p>
-          <div class="area-inputs-nivel escondido" id="nivel2">
-              <input placeholder="Título do nível" class="input-caixa-nivel"/>
-              <input placeholder="% de acerto mínima" class="input-caixa-nivel"/>
-              <input placeholder="URL da imagem do nível" class="input-caixa-nivel"/>
-              <input placeholder="Descrição do nível" class="input-caixa-nivel"/>
-          </div>
+        <div class="icone-caixa-nivel" onclick="abrirCaixaNivel(this)">
+          <ion-icon name="create-outline"></ion-icon>
+        </div>
+        <p class="forte p1">Nível 2</p>
+        <div class="area-inputs-nivel escondido" id="nivel2">
+          <input placeholder="Título do nível" class="input-caixa-nivel" />
+          <input placeholder="% de acerto mínima" class="input-caixa-nivel" />
+          <input
+            placeholder="URL da imagem do nível"
+            class="input-caixa-nivel"
+          />
+          <input placeholder="Descrição do nível" class="input-caixa-nivel" />
+        </div>
       </div>
       <div class="caixa-nivel caixa-nivel-fechada" id="criaQuizNivel3">
-          <div class="icone-caixa-nivel" onclick="abrirCaixaNivel(this)">
-              <ion-icon name="create-outline"></ion-icon>
-          </div>
-          <p class="forte p1">Nível 3</p>
-          <div class="area-inputs-nivel escondido" id="nivel3">
-              <input placeholder="Título do nível" class="input-caixa-nivel"/>
-              <input placeholder="% de acerto mínima" class="input-caixa-nivel"/>
-              <input placeholder="URL da imagem do nível" class="input-caixa-nivel"/>
-              <input placeholder="Descrição do nível" class="input-caixa-nivel"/>
-          </div>
+        <div class="icone-caixa-nivel" onclick="abrirCaixaNivel(this)">
+          <ion-icon name="create-outline"></ion-icon>
+        </div>
+        <p class="forte p1">Nível 3</p>
+        <div class="area-inputs-nivel escondido" id="nivel3">
+          <input placeholder="Título do nível" class="input-caixa-nivel" />
+          <input placeholder="% de acerto mínima" class="input-caixa-nivel" />
+          <input
+            placeholder="URL da imagem do nível"
+            class="input-caixa-nivel"
+          />
+          <input placeholder="Descrição do nível" class="input-caixa-nivel" />
+        </div>
       </div>
       <div class="cria-nivel-endbutton" onclick="finalizarQuiz()">
-          <p>Finalizar Quizz</p>
+        <p>Finalizar Quizz</p>
       </div>
     </div>
 
