@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsividade.css" />
     <!--Fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,7 +94,7 @@
     <!--Tela Desktop 9-->
 
     <!--Tela Desktop 1-->
-    <div class="containerPrincipal escondido">
+    <div class="containerPrincipal ">
       <div class="criarQuizz">
         <div class="nenhumQuizz">
           <h1>Você não criou nenhum<br />quizz ainda :(</h1>
@@ -101,7 +102,7 @@
         </div>
       </div>
       <div class="conteudo">
-        <h1><strong>Todos os Quizzes</strong></h1>
+        <h1 class="titulo-todos-os-quizes"><strong>Todos os Quizzes</strong></h1>
         <div class="todosOsQuizzes">
           <div class="caixaQuizz">
             <img
@@ -203,7 +204,7 @@
       </div>
 
       <div class="conteudo">
-        <h1><strong>Todos os Quizzes</strong></h1>
+        <h1 class="titulo-todos-os-quizes"><strong>Todos os Quizzes</strong></h1>
         <div class="todosOsQuizzes">
           <div class="caixaQuizz">
             <img
@@ -273,7 +274,7 @@
     <!--Tela Desktop 2-->
 
     <!--Tela Desktop 3-->
-    <div class="containerSecundario">
+    <div class="containerSecundario escondido">
       <div class="bannerQuizz"><p>O quão Potterhead é você?</p></div>
       <div class="containerRespostas">
         <div class="caixaPergunta">
@@ -345,8 +346,8 @@
 
     <!--Tela Desktop 3-->
 
-    <!-- TELA CRIAÇÃO DE QUIZ - NIVEIS DO QUIZ -->
-    <div class="cria-nivel-area-geral escondido">
+    <!--Tela Desktop 10-->
+    <div class="cria-nivel-area-geral containerPrincipal escondido">
       <p class="forte p1"><span style="font-size: 23px;">Agora, decida os níveis!</span></p> <!-- AJUSTAR O NOME DESSA CLASSE -->
       <div class="caixa-nivel caixa-nivel-aberta" id="criaQuizNivel1">
           <div class="icone-caixa-nivel escondido"  onclick="abrirCaixaNivel(this)">
@@ -388,6 +389,25 @@
           <p>Finalizar Quizz</p>
       </div>
     </div>
+    <!--Tela Desktop 10-->
+
+    <!--Tela Desktop 11-->
+    <div class="tela-11 containerPrincipal escondido">
+      <p class="forte desktop11-p"><span style="font-size: 23px;">Seu quizz está pronto!</span>
+        
+        <div class="desktop11-quiz">
+          <!--IMG TEM QUE RECEBER A URL DO INPUT-->
+          <img
+              src="https://set.org.br/wp-content/uploads/2020/11/os-simpsons--1100x619.jpg"
+              alt=""
+            />
+          <!--TITULO TEM QUE RECEBER O TITULO DO INPUT-->
+          <p class="desktop11-titulo"><span style="font-size: 23px;">O quão Potterhead é você?</span></p>
+        </div>
+        <div class="desktop11-acessar">Acessar Quizz</div>
+        <div class="desktop11-voltar">Voltar pra home</div>
+    </div>
+    <!--Tela Desktop 11-->
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./js/script.js"></script>
